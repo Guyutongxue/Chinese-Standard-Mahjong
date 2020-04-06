@@ -1,8 +1,11 @@
 dist: bionic
 language: cpp
-before_install:
+before_script:
   - sudo apt update
   - sudo apt -y install libboost-dev
-  - sudo apt -y install libjsoncpp-dev
 script:
+  - wget https://github.com/open-source-parsers/jsoncpp/archive/1.8.4.tar.gz
+  - tar -xvf 1.8.4.tar.gz
+  - cd jsoncpp-1.8.4 && cmake . && make
+  - cp src/lib_json/libjsoncpp.a ../bin/
   - make
