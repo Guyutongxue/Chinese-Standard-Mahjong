@@ -4,4 +4,4 @@
 
 # Static library
 *.a
-
+!prebuild-jsoncpp/*.a

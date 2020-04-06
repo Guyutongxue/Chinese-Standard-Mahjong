@@ -1,0 +1,7 @@
+dist: xenial
+language: cpp
+before_install:
+  - sudo apt -y install libboost-dev
+script:
+  - cp prebuild-jsoncpp/wsl-libjsoncpp.a lib/libjsoncpp.a
+  - make

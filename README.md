@@ -37,6 +37,8 @@ README: [English](README-en.md) | [中文](README.md)
 
 ## 编译
 
+如果你没有配置 Boost 库，请自行配置。
+
 请前往 [JsonCpp](https://github.com/open-source-parsers/jsoncpp) 获取 JsonCpp 源码并编译。将生成的 `libjsoncpp.a` 导入本仓库的 `lib` 文件夹中。
 执行以下 Make 目标来生成你想要生成的东西：
 ```Shell
@@ -44,8 +46,8 @@ make                # 生成全部
 make all            # 生成全部
 make judge          # 生成裁判程序
 make MahjongGB      # 生成算番器
-make test           # 生成算番器演示代码（依赖于 Mahjong GB）
-make sample-bot     # 生成样例 Bot （依赖于
+make test           # 生成算番器演示代码（依赖于 MahjongGB）
+make sample-bot     # 生成样例 Bot （依赖于 MahjongGB，尽管实际不需要）
 ```
 
 当然也提供了 `make clean` 目标用以清除生成文件。
@@ -53,6 +55,10 @@ make sample-bot     # 生成样例 Bot （依赖于
 如果你在 Windows 上使用 MinGW 系列，请更改命令为 `mingw32-make`，并将 `Makefile` 中 `FILE_EXT` 改为 `.exe`。
 
 暂时不考虑 MSVC。
+
+## Note
+
+为了兼容性，我将 `package/mahjong-algorithm/include` 内的文件全部复制到 `include\mahjong-algorithm` 中，而非建立链接。
 
 ## 微信公众号
 
