@@ -7,11 +7,11 @@
 #include <algorithm>
 #include <unordered_map>
 #include <unordered_set>
-#include "jsoncpp/json.h"
+#include "json/json.h"
 #include <boost/algorithm/string/classification.hpp>
 #include <boost/algorithm/string/split.hpp>
-#include "MahjongGB/fan_calculator.cpp"
-#include "MahjongGB/shanten.cpp"
+#include "mahjong-algorithm/fan_calculator.h"
+// #include "mahjong-algorithm/shanten.h"
 
 using namespace std;
 

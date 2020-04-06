@@ -1,0 +1,7 @@
+# Build stuff
+*.o
+*.out
+
+# Static library
+*.a
+

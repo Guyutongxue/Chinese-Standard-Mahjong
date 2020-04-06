@@ -1,46 +1,65 @@
 # Chinese-Standard-Mahjong
 
-README: [English](https://github.com/ailab-pku/Chinese-Standard-Mahjong/blob/master/README.md) | [中文](https://github.com/ailab-pku/Chinese-Standard-Mahjong/blob/master/README-zh.md)
+README: [English](README-en.md) | [中文](README.md)
 
-This Chinese Standard Mahjong Competition is hosted by AILab in Peking University and WEIZHIYU (Beijing) Technology Co., Ltd.
+此项目提供的资料为北京大学网络所人工智能实验室与微智娱（北京）科技有限公司联合举办的国标麻将比赛。
 
-Click [here](https://www.botzone.org.cn/static/gamecontest2020a.html) to navigate to the Mahjong Competition on Botzone. 
+[点此查看](https://www.botzone.org.cn/static/gamecontest2020a.html)Botzone上的国标麻将比赛。
 
-[Botzone](https://www.botzone.org.cn/) is a universal online multi-agent game AI platform, designed to evaluate different implementations of game AI by applying them to agents and compete with each other, featuring an ELO ranking system and a contest system for users to evaluate their AI programs. 
+[Botzone](https://www.botzone.org.cn/)是在线的AI程序对抗平台。用户根据游戏规则编写AI程序提交，平台使用天梯排名和小组比赛机制来评测AI的相对水平。在以下内容叙述中，我们将AI程序又称为bot。
 
-Click [here](https://wiki.botzone.org.cn/index.php?title=%E9%A6%96%E9%A1%B5/en) to navigate to Botzone wiki for more details.
+[点此查看](https://wiki.botzone.org.cn/index.php?title=%E9%A6%96%E9%A1%B5/en)维基来了解更多关于Botzone。
 
-- [Goal](#goal)
-- [Background](#background)
-- [Usage](#usage)
-- [Contributing](#contributing)
+- [比赛宗旨](#比赛宗旨)
+- [麻将历史](#麻将历史)
+- [项目使用](#项目使用)
+- [贡献者](#贡献者)
 
-## Goal
+## 比赛宗旨
 
-- Develop an intelligent Mahjong agent that can compete with other agents as well as human players based on the online AI platform, Botzone.
-- Attract more research societies to use and do searches on Botzone.
+- 基于Botzone平台开发国标麻将AI，使之具有能与麻将专业玩家匹配的水平。
+- 吸引更多研究团队使用Botzone，在此平台上做学术、教育等方面的研究。
 
-## Background
+## 麻将历史
 
-Mahjong is an imperfect information four-player game that originated in China with a long history of more than 3000 years. In 1998 the All-China Sports Federation founded a universal competition standard called Chinese Standard Mahjong (Guóbiāo Májiàng in Chinese pronunciation), which we adopt in this competition. However, we reduce 16 games into 1 game on Botzone. 
+麻将是一个非完全信息的四人游戏，起源于3000多年前的中国，而后传播至世界各地，延伸出不同的版本，深受人们喜爱，具有广泛的群众基础。1998年中国国家体育总局制订了国标麻将的规则，这也是我们在本次比赛中所使用的规则。在Botzone上的国标麻将，我们将原本的打4圈（共16局）简化为1局，但在实际比赛中我们将考虑座次公平性，交换座次在相同起手下进行比赛。
 
-Mahjong involves strategy and a certain degree of luck, and the uncertainty brings to the game a lot of fun and challenge. Different from Mahjong’s varieties in Asia, e.g., Riichi Mahjong (Japan), Chinese Standard Mahjong encourages the players to adopt aggressive strategies, which makes the competition watchable and attractive.
+想打好麻将需要策略，也需要一定运气。这种不确定性增加了麻将的趣味性和挑战性。不同于日本立直麻将，国标麻将鼓励玩家采取进攻性策略，（有所表现为多吃多碰多杠），这使得游戏的可观赏性大大增加。
 
-## Usage
+## 项目使用
 
-The codes are provided:
+我们在此项目中提供了以下资料：
 
-- [Fan calculator](https://github.com/ailab-pku/Chinese-Standard-Mahjong/tree/master/fan-calculator-usage): The is forked from [ChineseOfficialMahjongHelper](https://github.com/summerinsects/ChineseOfficialMahjongHelper/tree/master/Classes/mahjong-algorithm). We provide the usage of this tool in C++ and python.
-- [Judge Program](https://github.com/ailab-pku/Chinese-Standard-Mahjong/tree/master/judge): Click to get more details about [Judge on Botzone](https://wiki.botzone.org.cn/index.php?title=%E8%A3%81%E5%88%A4/en).
-- [Mahjong Rules](https://github.com/ailab-pku/Chinese-Standard-Mahjong/tree/master/mahjong-rules): We provide the instructions of Mahjong in Chinese and English. Click to get more information about [Chinese Standard Mahjong on Botzone](https://wiki.botzone.org.cn/index.php?title=Chinese-Standard-Mahjong/en).
-- [Sample bot](https://github.com/ailab-pku/Chinese-Standard-Mahjong/tree/master/sample-bot-Botzone): This is the sample bot program on Botzone.
+- [MahjongGB 算番器](https://github.com/Guyutongxue/Chinese-Standard-Mahjong/tree/master/MahjongGB)：这引自[ChineseOfficialMahjongHelper](https://github.com/summerinsects/ChineseOfficialMahjongHelper/tree/master/Classes/mahjong-algorithm)。根目录下的 `test.cpp` 为算番器的样例代码。
+- [Judge Program 裁判程序](https://github.com/Guyutongxue/Chinese-Standard-Mahjong/tree/master/judge)：[点此查看](https://wiki.botzone.org.cn/index.php?title=%E8%A3%81%E5%88%A4)Botzone裁判程序维基资料。
+- [Mahjong Rules 麻将规则](https://github.com/Guyutongxue/Chinese-Standard-Mahjong/tree/master/mahjong-rules)：我们提供了中英文的麻将番种说明。[点此查看](https://wiki.botzone.org.cn/index.php?title=Chinese-Standard-Mahjong)Botzone上的国标麻将游戏说明。
+- [Sample bot 样例bot程序](https://github.com/Guyutongxue/Chinese-Standard-Mahjong/tree/master/sample-bot)：这是Botzone上的样例bot程序。
 
-## WeChat QRCode
+## 编译
 
-Follow our account on Wechat to keep updated on the latest competition news and trending topics.
+请前往 [JsonCpp](https://github.com/open-source-parsers/jsoncpp) 获取 JsonCpp 源码并编译。将生成的 `libjsoncpp.a` 导入本仓库的 `lib` 文件夹中。
+执行以下 Make 目标来生成你想要生成的东西：
+```Shell
+make                # 生成全部
+make all            # 生成全部
+make judge          # 生成裁判程序
+make MahjongGB      # 生成算番器
+make test           # 生成算番器演示代码（依赖于 Mahjong GB）
+make sample-bot     # 生成样例 Bot （依赖于
+```
+
+当然也提供了 `make clean` 目标用以清除生成文件。
+
+如果你在 Windows 上使用 MinGW 系列，请更改命令为 `mingw32-make`，并将 `Makefile` 中 `FILE_EXT` 改为 `.exe`。
+
+暂时不考虑 MSVC。
+
+## 微信公众号
+
+欢迎关注Botzone官方公众号，接收最新比赛通知！
 
 ![avatar](https://www.botzone.org.cn/images/qrcode_for_gh_3a40a410124d_258.jpg)
 
-## Contributing
+## 贡献者
 
 @ailab-pku

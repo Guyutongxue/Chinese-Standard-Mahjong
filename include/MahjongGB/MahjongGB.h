@@ -1,0 +1,1 @@
+/mnt/d/Code/Cpp/Chinese-Standard-Mahjong/MahjongGB/MahjongGB.h

@@ -4,7 +4,7 @@
 #include <vector>
 #include <string>
 #include <unordered_map>
-#include "../../ChineseOfficialMahjongHelper/Classes/mahjong-algorithm/fan_calculator.h"
+// #include "mahjong-algorithm/fan_calculator.h"
 #include <cstring>
 #include <iostream>
 

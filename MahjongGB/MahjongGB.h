@@ -6,9 +6,9 @@
 #include <string>
 
 //CPP
-#include "MahjongGB.cpp"
-#include "../../ChineseOfficialMahjongHelper/Classes/mahjong-algorithm/fan_calculator.cpp"
-#include "../../ChineseOfficialMahjongHelper/Classes/mahjong-algorithm/shanten.cpp"
+// #include "MahjongGB.cpp"
+#include "../package/mahjong-algorithm/include/fan_calculator.h"
+#include "../package/mahjong-algorithm/include/shanten.h"
 //Dangerous
 
 using namespace std;
