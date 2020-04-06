@@ -3,6 +3,6 @@ language: cpp
 before_install:
   - sudo apt update
   - sudo apt -y install libboost-dev
+  - sudo apt -y install libjsoncpp-dev
 script:
-  - cp prebuild-jsoncpp/wsl-libjsoncpp.a lib/libjsoncpp.a
   - make
