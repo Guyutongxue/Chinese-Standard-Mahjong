@@ -7,5 +7,5 @@ script:
   - wget https://github.com/open-source-parsers/jsoncpp/archive/1.8.4.tar.gz
   - tar -xvf 1.8.4.tar.gz
   - cd jsoncpp-1.8.4 && cmake . && make
-  - cp src/lib_json/libjsoncpp.a ../bin/
+  - cp src/lib_json/libjsoncpp.a ../lib/
   - make
