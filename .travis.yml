@@ -1,6 +1,7 @@
-dist: xenial
+dist: bionic
 language: cpp
 before_install:
+  - sudo apt update
   - sudo apt -y install libboost-dev
 script:
   - cp prebuild-jsoncpp/wsl-libjsoncpp.a lib/libjsoncpp.a
