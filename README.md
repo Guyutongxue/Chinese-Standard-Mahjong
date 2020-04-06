@@ -1,5 +1,7 @@
 # Chinese-Standard-Mahjong
 
+![Build status](https://api.travis-ci.org/Guyutongxue/Chinese-Standard-Mahjong.svg)
+
 README: [English](README-en.md) | [中文](README.md)
 
 此项目提供的资料为北京大学网络所人工智能实验室与微智娱（北京）科技有限公司联合举办的国标麻将比赛。
@@ -50,11 +52,14 @@ make test           # 生成算番器演示代码（依赖于 MahjongGB）
 make sample-bot     # 生成样例 Bot （依赖于 MahjongGB，尽管实际不需要）
 ```
 
-当然也提供了 `make clean` 目标用以清除生成文件。
-
 如果你在 Windows 上使用 MinGW 系列，请更改命令为 `mingw32-make`，并将 `Makefile` 中 `FILE_EXT` 改为 `.exe`。
 
 暂时不考虑 MSVC。
+
+
+当然也提供了 `make clean` 目标用以清除生成文件，但是目前不支持 Windows 系统。
+
+P.S. 如果你高兴的话，你可以按照 `.travis.yml` 里的步骤去做。
 
 ## Note
 
